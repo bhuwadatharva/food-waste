@@ -27,7 +27,7 @@ const SignIn = () => {
     console.log(formData);
     try {
       const response = await axios.post(
-        'http://localhost:4000/api/v1/user/register',
+        'https://food-waste-h2vh.onrender.com/api/v1/user/register',
         formData,
         {
           headers: {
