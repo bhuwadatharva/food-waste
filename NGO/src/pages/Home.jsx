@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/v1/order/ngo/orders", {
+        const response = await fetch("https://food-waste-h2vh.onrender.com/api/v1/order/ngo/orders", {
           method: "GET",
           credentials: "include",
           headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@ const Home = () => {
 
     const fetchVolunteers = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/v1/user/volunteers", {
+        const response = await fetch("https://food-waste-h2vh.onrender.com/api/v1/user/volunteers", {
           method: "GET",
           credentials: "include",
           headers: { "Content-Type": "application/json" },
@@ -72,7 +72,7 @@ const Home = () => {
         return alert("User not authenticated.");
       }
 
-      const response = await fetch("http://localhost:4000/api/v1/order/accept", {
+      const response = await fetch("https://food-waste-h2vh.onrender.com/api/v1/order/accept", {
         method: "PUT",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
