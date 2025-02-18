@@ -4,7 +4,10 @@ import axios from 'axios';
 import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+
 import History from './pages/History';
+
+
 // Import the context
 import { Context } from './main';
 import Navbar from './pages/Navbar';
@@ -15,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('https://food-waste-h2vh.onrender.com/api/v1/user/me',{ withCredentials: true });
+        const response = await axios.get('http://localhost:4000/api/v1/user/me',{ withCredentials: true });
         setIsAuthenticated(true);
         setUser(response.data.user);
       } catch (error) {

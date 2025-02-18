@@ -8,7 +8,7 @@ const History = () => {
   useEffect(() => {
     const fetchOrderHistory = async () => {
       try {
-        const response = await fetch("https://food-waste-h2vh.onrender.com/api/v1/order/ngo/history", {
+        const response = await fetch("http://localhost:4000/api/v1/order/ngo/history", {
           method: "GET",
           credentials: "include",
           headers: { "Content-Type": "application/json" },

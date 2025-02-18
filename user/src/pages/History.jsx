@@ -12,7 +12,7 @@ const History = () => {
     const fetchOrders = async () => {
       try {
        
-        const response = await axios.get("https://food-waste-h2vh.onrender.com/api/v1/order/orders", {
+        const response = await axios.get("http://localhost:4000/api/v1/order/orders", {
           withCredentials: true, // Include credentials for authentication
         });
 
