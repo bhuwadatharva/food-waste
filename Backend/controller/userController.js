@@ -2,7 +2,7 @@ import { catchAsyncErrors } from "../middlewares/catchAsyncErrors.js";
 import ErrorHandler from "../middlewares/errorMiddeware.js";
 import { User } from "../models/userSchema.js";
 import { generateToken } from "../utils/jwtToken.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 // Register User (Volunteer, NGO, or Donor)
 export const registerUser = catchAsyncErrors(async (req, res, next) => {
