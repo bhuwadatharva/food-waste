@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="h-20 flex justify-between items-center px-5 md:px-10">
             {/* Logo Section */}
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold">DYP</h1>
+              <h1 className="text-4xl md:text-5xl font-bold">FW</h1>
             </div>
 
             {/* Logout Button */}
