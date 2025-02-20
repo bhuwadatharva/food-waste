@@ -36,7 +36,7 @@ const Order = () => {
       ? foodtime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
       : "";
   
-    const id = user?._id;  // This is where you're accessing the user ID
+    const id = user?._id || user?.id;  // This is where you're accessing the user ID
   
     if (!id) {
       setMessage("Authentication failed! Please log in again.");
