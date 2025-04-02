@@ -38,10 +38,7 @@ const Order = () => {
   
     const id = user?._id || user?.id;  // This is where you're accessing the user ID
   
-    if (!id) {
-      setMessage("Authentication failed! Please log in again.");
-      return;
-    }
+    
   
     const orderData = {
       foodDetails,
@@ -52,7 +49,7 @@ const Order = () => {
       foodType,
       foodStyle,
       role: user?.role || "User",
-      userId: id,  // Sending user ID as part of the order data
+      userId: user?.id,  // Sending user ID as part of the order data
     };
   
     try {

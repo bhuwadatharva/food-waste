@@ -80,7 +80,7 @@ export const getAllNGOs = catchAsyncErrors(async (req, res, next) => {
 // Logout User
 export const logoutUser = catchAsyncErrors(async (req, res, next) => {
     res.status(200).cookie("Token", "", {
-        httpOnly: true,
+        httpsOnly: true,
         expires: new Date(Date.now()),
         secure:true,
         sameSite: "none"
